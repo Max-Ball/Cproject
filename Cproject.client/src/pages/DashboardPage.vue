@@ -9,26 +9,36 @@
           Home
         </div>
       </router-link>
-      <div class="py-2 d-flex align-items-center menu-item selectable">
-        <i class="mdi mdi-trophy me-2"></i>
-        Projects
-      </div>
-      <div class="py-2 d-flex align-items-center menu-item selectable">
-        <i class="mdi mdi-cash me-2"></i>
-        Billings
-      </div>
-      <div class="py-2 d-flex align-items-center menu-item selectable">
-        <i class="mdi mdi-account me-2"></i>
-        Team
-      </div>
-      <div class="py-2 d-flex align-items-center menu-item selectable">
-        <i class="mdi mdi-graph me-2"></i>
-        Stats
-      </div>
-      <div class="py-2 d-flex align-items-center menu-item selectable">
-        <i class="mdi mdi-cog me-2"></i>
-        Settings
-      </div>
+      <router-link :to="{ name: 'Projects' }">
+        <div class="py-2 d-flex align-items-center menu-item selectable">
+          <i class="mdi mdi-trophy me-2"></i>
+          Projects
+        </div>
+      </router-link>
+      <router-link :to="{ name: 'Billings' }">
+        <div class="py-2 d-flex align-items-center menu-item selectable">
+          <i class="mdi mdi-cash me-2"></i>
+          Billings
+        </div>
+      </router-link>
+      <router-link :to="{ name: 'Teams' }">
+        <div class="py-2 d-flex align-items-center menu-item selectable">
+          <i class="mdi mdi-account me-2"></i>
+          Team
+        </div>
+      </router-link>
+      <router-link :to="{ name: 'Stats' }">
+        <div class="py-2 d-flex align-items-center menu-item selectable">
+          <i class="mdi mdi-graph me-2"></i>
+          Stats
+        </div>
+      </router-link>
+      <router-link :to="{ name: 'Settings' }">
+        <div class="py-2 d-flex align-items-center menu-item selectable">
+          <i class="mdi mdi-cog me-2"></i>
+          Settings
+        </div>
+      </router-link>
     </section>
     <section class="col-md-9">
       Dashboard
