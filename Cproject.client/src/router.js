@@ -21,6 +21,36 @@ const routes = [
     name: 'Account',
     component: loadPage('AccountPage'),
     beforeEnter: authGuard
+  },
+  {
+    path: '/projects',
+    name: 'Projects',
+    component: loadPage('ProjectsPage'),
+    beforeEnter: authGuard
+  },
+  {
+    path: '/billings',
+    name: 'Billings',
+    component: loadPage('BillingsPage'),
+    beforeEnter: authGuard
+  },
+  {
+    path: '/teams',
+    name: 'Teams',
+    component: loadPage('TeamsPage'),
+    beforeEnter: authGuard
+  },
+  {
+    path: '/stats',
+    name: 'Stats',
+    component: loadPage('StatsPage'),
+    beforeEnter: authGuard
+  },
+  {
+    path: '/settings',
+    name: 'Settings',
+    component: loadPage('SettingsPage'),
+    beforeEnter: authGuard
   }
 ]
 

@@ -1,10 +1,14 @@
 <template>
   <div class="row">
     <section class="col-md-3 align-items-center sidebar bg-dark text-light py-3 px-4">
-      <div class="py-2 d-flex align-items-center menu-item selectable">
-        <i class="mdi mdi-home me-2"></i>
-        Home
-      </div>
+      <router-link :to="{
+        name: 'Dashboard'
+      }">
+        <div class="py-2 d-flex align-items-center menu-item selectable">
+          <i class="mdi mdi-home me-2"></i>
+          Home
+        </div>
+      </router-link>
       <div class="py-2 d-flex align-items-center menu-item selectable">
         <i class="mdi mdi-trophy me-2"></i>
         Projects
