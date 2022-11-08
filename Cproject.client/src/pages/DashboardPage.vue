@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <section class="col-md-3 align-items-center sidebar bg-dark text-light py-3 px-4">
+    <section class="col-md-2 align-items-center sidebar bg-dark text-light py-3 px-4">
       <router-link :to="{
         name: 'Dashboard'
       }">
